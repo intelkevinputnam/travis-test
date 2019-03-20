@@ -9,7 +9,9 @@ Welcome to travis-test's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :glob:
 
+   sub-dir/*
 
 
 Indices and tables
