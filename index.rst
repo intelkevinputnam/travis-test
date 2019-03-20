@@ -12,7 +12,7 @@ Welcome to travis-test's documentation!
    :glob:
 
    sub-dir/*
-
+   sub-dir-2/*
 
 Indices and tables
 ==================
