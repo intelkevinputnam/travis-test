@@ -13,6 +13,7 @@ Welcome to travis-test's documentation!
 
    sub-dir/*
    sub-dir-2/*
+   sub-dir-3/*
 
 Indices and tables
 ==================
