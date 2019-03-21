@@ -1,1 +1,4 @@
-fail
+.. _dont-fail:
+
+don't fail
+##########
