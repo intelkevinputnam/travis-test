@@ -15,4 +15,4 @@ jobs:
     - name: Build the docs
       run: |
         export PATH="$HOME/.local/bin:$PATH"
-        which sphinx-build
+        make html
