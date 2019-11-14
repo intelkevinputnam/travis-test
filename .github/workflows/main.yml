@@ -16,3 +16,8 @@ jobs:
       run: |
         export PATH="$HOME/.local/bin:$PATH"
         make html
+        mv _build/html $HOME/output
+        cd $HOME/output
+        git init
+        git add .
+        git commit -m "latest html output"
