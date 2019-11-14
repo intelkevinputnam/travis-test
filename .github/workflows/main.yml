@@ -18,7 +18,8 @@ jobs:
         make html
         mv _build/html $HOME/output
         cd $HOME/output
-        git init
+        git config --global user.name "${GITHUB_ACTOR}"
+        git config --global user.email "${GITHUB_ACTOR}@github.com"
         git add .
         git commit -m "latest html output"
         git push -f https://${GITHUB_ACTOR}:${{secrets.ACCESS_TOKEN}}@github.com/intelkevinputnam/intelkevinputnam.github.io.git
