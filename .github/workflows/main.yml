@@ -18,6 +18,7 @@ jobs:
         make html
         mv _build/html $HOME/output
         cd $HOME/output
+        git init
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@github.com"
         git add .
