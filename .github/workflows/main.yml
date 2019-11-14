@@ -12,6 +12,5 @@ jobs:
     - name: Install dependencies
       run: |
         pip3 install -r requirements.txt
-        sudo apt-get install python3-sphinx
     - name: Build the docs
-      run: make html
+      run: which sphinx-build
