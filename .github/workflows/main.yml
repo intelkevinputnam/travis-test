@@ -13,4 +13,6 @@ jobs:
       run: |
         pip3 install --user -r requirements.txt
     - name: Build the docs
-      run: ls ~/.local/bin
+      run: |
+        export PATH="$HOME/.local/bin:$PATH"
+        which sphinx-build
