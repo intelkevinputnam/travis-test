@@ -13,4 +13,4 @@ jobs:
       run: |
         pip3 install -r requirements.txt
     - name: Build the docs
-      run: ls .local
+      run: find / -name sphinx-build
