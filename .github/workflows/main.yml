@@ -25,5 +25,5 @@ jobs:
         git config --global user.email "${GITHUB_ACTOR}@github.com"
         git add .
         git commit -m "latest html output"
-        git push -f https://${GITHUB_ACTOR}:${{secrets.ACCESS_TOKEN}}@git@github.com:intelkevinputnam/travis-test.git HEAD:html
+        git push -f https://${GITHUB_ACTOR}:${{secrets.ACCESS_TOKEN}}@github.com/intelkevinputnam/travis-test.git HEAD:html
         
