@@ -1,0 +1,20 @@
+name: Check
+
+on: [pull_request]
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install dependencies
+      run: |
+        pip3 install --user -r requirements.txt
+    - name: Build the docs
+      run: |
+        export PATH="$HOME/.local/bin:$PATH"
+        make html
+        mv _build/html $HOME/output
