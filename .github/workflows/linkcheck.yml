@@ -2,7 +2,7 @@ name: Linkcheck
 
 on:
   schedule:
-    - cron: '0 0 * * Mon,Wed,Fri'
+    - cron: '27 11 * * Mon,Wed,Fri'
 
 jobs:
   build:
